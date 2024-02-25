@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Journey Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+  </head>
+  <link rel="stylesheet" href="style.css"/>
+  <body>
+
+
+    <!-- offcanvas navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container" id="contid">
+
+        <!-- logo -->
+
+        <!-- <a class="navbar-brand fs-4 text-color-dark" href="#" >Journey Tracker</a> -->
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Sidebar -->
+
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+        <!-- sidebar header --> 
+        
+          <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Journey Tracker</h5>
+            <button type="button btn-close-black shadow-none" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>    
+          </div>
+
+        <!-- sidebar body -->
+
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0" id="con">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- offcanvas ends here --> 
+
+    <!-- Responsive cards starts here -->
+
+    <div class="container my-4 ">
+      <div class="row g-3">
+        
+          <div class="col-lg">
+            <div class="card">
+              <img src="vehicle own.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">Vehicle Owner</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="text-center"><a href="vehicleOwner.html" class="btn btn-outline-primary text-align-center justify-content-center">Go somewhere</a></div>
+              </div>
+            </div>
+          </div>
+       
+
+        <div class="col-lg">
+          <div class="card">
+            <img src="student.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Student Traveller</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="text-center"><a href="traveller.html" class="btn btn-outline-primary text-align-center justify-content-center">Go somewhere</a></div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>   
+
+<!-- Responsive cards Ends here -->
+
+<!-- Footer section starts here -->
+
+
+<!-- <div class="footer footer-expand-lg">
+  <footer class="bg-dark py-5 mt-5">
+
+    <div class="container text-light text-center"></div>
+    <p class="display-5 mb-3 text-white">Journey Tracker</p>
+    <small class="text-white-50">&copy; Copyright by Journey Tracker. All rights reserved.</small>
+    
+    </footer>
+</div> -->
+
+<div class="container-fluid">
+  <footer">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">Made with &hearts; in India</p>
+  </footer>
+</div>
+
+    <!-- main navigation bar starts -->
+
+   <!-- <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container justify-content-center">
+              <a class="navbar-brand" href="#">Journey Tracker</a>
+            
+
+
+         
+
+
+
+               <div class="collapse navbar-collapse md" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul> 
+                
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div> -->
+
+    <!-- navigation bar ends here -->
+
+
+
+    <!-- Main body content starts -->
+
+ <!-- <section class="bg-main bg-color main-section ">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-6 my-4">
+                <div class="card" style="width: 35rem;">
+                    <img src="vehicle own.jpg" alt="Vehicle owner" class="card-img-top">
+                    <div class="card-body">
+                        <h3>Vehicle Owner</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, illo? Quisquam porro blanditiis quam, quia voluptate enim explicabo dolorem accusantium, vitae commodi perspiciatis quibusdam exercitationem eius saepe corrupti fugiat. Molestiae?</p>
+                        <div class="text-center"><a href="about.html" class="btn btn-outline-primary">Go somewhere</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-6 my-4">
+                <div class="card" style="width: 35rem;">
+                    <img src="student.png" alt="Vehicle owner" class="card-img-top">
+                    <div class="card-body">
+                        <h3>Student Traveller</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, illo? Quisquam porro blanditiis quam, quia voluptate enim explicabo dolorem accusantium, vitae commodi perspiciatis quibusdam exercitationem eius saepe corrupti fugiat. Molestiae?</p>
+                        <div class="text-center"><a href="#" class="btn btn-outline-primary">Go somewhere</a></div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </div> -->
+    
+    <!-- lorem ipsum is a dummy font  -->
+ 
+
+
+   <!-- Main body content ends -->
+
+   <!-- footer section starts -->
+
+
+<!-- <div class="container-fluid">
+    
+        <footer>
+            <ul class="nav justify-content-center border-bottom ">
+              <li class="nav-item"><a href="#" class="nav-link px-5 text-body-secondary">Home</a></li>         
+              <li class="nav-item"><a href="#" class="nav-link px-5 text-body-secondary">FAQs</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link px-5 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary justify-content-center">Made with &hearts; in India</p>
+          </footer>
+    
+</div> -->
+
+<!-- footer section ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

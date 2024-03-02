@@ -45,6 +45,7 @@ else
     {
         $testsqli =  "INSERT INTO `trackj`.`baseinfo` (`name`, `phone`,`email`,`pass`,dt) 
 VALUES ('$getName', '$getPhone','$getEmail', '$hash',current_timestamp());";
+// $testsqli = "INSERT INTO `trackj`.`baseinfo` (`name`, `phone`, `email`, `pass`,`dt`) VALUES ('$getName', '$getPhone', '$getEmail','$hash', current_timestamp());";
 mysqli_query($con, $testsqli);
 // echo $testsqli;
 header('location: login.html');
@@ -65,6 +66,15 @@ header('location: login.html');
 //     echo "Unable to insert into db";
 // }
 
+// In case if sometimes the auto increment isn't reseting after trying it manually, use these sql commands in the database
+// in the table (baseinfo the one we are using)
+// Then navigate to sql tab in this table and execute this commands
+// To execute click on 'Go'
+
+// CREATE TABLE baseinfo1 LIKE baseinfo;
+// INSERT baseinfo1 SELECT * FROM baseinfo;
+// TRUNCATE TABLE baseinfo;
+// INSERT baseinfo SELECT * FROM baseinfo1;
 
 $con->close();
 
